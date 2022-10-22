@@ -1,11 +1,9 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Header from '../../components/layout/Header.tsx'
-import Footer from '../../components/layout/Footer.tsx'
+import styles from '../../styles/Home.module.css'
+import Header from '../../../components/layout/Header.tsx'
+import Footer from '../../../components/layout/Footer.tsx'
 
-const Home: NextPage = () => {
+export default function LoginPage() {
   return (
     <div className={styles.container}>
       <Header />
@@ -17,7 +15,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Login Page
         </h1>
 
         <p className={styles.description}>
@@ -59,5 +57,3 @@ const Home: NextPage = () => {
     </div>
   )
 }
-
-export default Home
